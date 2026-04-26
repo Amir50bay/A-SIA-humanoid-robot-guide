@@ -1,6 +1,6 @@
 // ============================================================
-// audio.cpp — A-SIA Humanoid Robotic Guide
-// Audio subsystem implementation — DFPlayer Mini
+// audio.cpp - A-SIA Humanoid Robotic Guide
+// Audio subsystem implementation - DFPlayer Mini
 // SoftwareSerial on pins 10 (RX) and 11 (TX)
 // ============================================================
 
@@ -12,7 +12,7 @@ static SoftwareSerial _audioSerial(PIN_DFPLAYER_RX, PIN_DFPLAYER_TX);
 static DFPlayerMega   _dfPlayer;
 
 // ------------------------------------------------------------
-// Initialize DFPlayer — confirmed sequence from archived code
+// Initialize DFPlayer - confirmed sequence from archived code
 // ------------------------------------------------------------
 void initAudio() {
     _audioSerial.begin(9600);
