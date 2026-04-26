@@ -1,8 +1,8 @@
-# Restoration Notes — A-SIA Humanoid Robotic Guide
+# Restoration Notes - A-SIA Humanoid Robotic Guide
 
 ## Purpose
 
-This document records the methodology, source materials, confirmed facts, and known discrepancies behind this repository. A-SIA is a restored project — the `src/` code is a structured reconstruction derived from preserved materials, not a verbatim recovery of a single original file.
+This document records the methodology, source materials, confirmed facts, and known discrepancies behind this repository. A-SIA is a restored project - the `src/` code is a structured reconstruction derived from preserved materials, not a verbatim recovery of a single original file.
 
 ---
 
@@ -43,11 +43,11 @@ The following are directly verifiable from the source materials:
 
 ### DHT sensor pin mismatch
 
-The hand-drawn wiring diagram shows the DHT sensor connected to **D9**. The archived code shows `_dht2.setup(28)` — **pin 28**. This suggests the wiring diagram was drawn at an earlier stage of the build and the pin was changed before final assembly. The code value (pin 28) is treated as authoritative.
+The hand-drawn wiring diagram shows the DHT sensor connected to **D9**. The archived code shows `_dht2.setup(28)` - **pin 28**. This suggests the wiring diagram was drawn at an earlier stage of the build and the pin was changed before final assembly. The code value (pin 28) is treated as authoritative.
 
 ### RemoteXY and wired control coexistence
 
-The archived code contains both wired analog servo control (A0–A6) and RemoteXY wireless interface (ESP8266 on Serial1). The servo control path is unconditional — it runs every loop regardless of RemoteXY state. The RemoteXY layer provided audio triggers and status display only. The primary servo control mode was wired.
+The archived code contains both wired analog servo control (A0–A6) and RemoteXY wireless interface (ESP8266 on Serial1). The servo control path is unconditional - it runs every loop regardless of RemoteXY state. The RemoteXY layer provided audio triggers and status display only. The primary servo control mode was wired.
 
 ### FLProg attachment order
 
@@ -59,7 +59,7 @@ In the archived sketch, servos are attached in non-sequential order (`_SM3`, `_S
 
 ### Modular code structure
 
-The original codebase was a single monolithic FLProg-generated `.ino` file with auto-generated variable names (`_SM1`, `_gtv2`, `_trgrt5I`, etc.). The restored `src/` directory refactors this into named modules with documented interfaces. All logic is derived from the original — no new behavior was introduced.
+The original codebase was a single monolithic FLProg-generated `.ino` file with auto-generated variable names (`_SM1`, `_gtv2`, `_trgrt5I`, etc.). The restored `src/` directory refactors this into named modules with documented interfaces. All logic is derived from the original - no new behavior was introduced.
 
 ### Scope narrowing
 
