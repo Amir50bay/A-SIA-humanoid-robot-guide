@@ -1,4 +1,4 @@
-# Mobile Base — A-SIA Humanoid Robotic Guide
+# Mobile Base - A-SIA Humanoid Robotic Guide
 
 ## Overview
 
@@ -20,13 +20,13 @@ The base has an oval profile constructed from foam board sheet material, giving 
 
 ## Electronics Bay
 
-The internal cavity of the base was used to house the main electronics enclosure — a 3D-printed black box containing the Arduino Mega 2560, ESP8266 module, DFPlayer Mini, and associated wiring. This arrangement kept all sensitive electronics protected and out of view during the presentation.
+The internal cavity of the base was used to house the main electronics enclosure - a 3D-printed black box containing the Arduino Mega 2560, ESP8266 module, DFPlayer Mini, and associated wiring. This arrangement kept all sensitive electronics protected and out of view during the presentation.
 
 ---
 
 ## Demonstrated Role
 
-During the NIS Turkistan Hackathon demonstration, the base allowed the robot to be positioned and repositioned manually between interaction scenarios. The passive caster design was appropriate for the presentation environment — a flat indoor floor — and required no motor control integration.
+During the NIS Turkistan Hackathon demonstration, the base allowed the robot to be positioned and repositioned manually between interaction scenarios. The passive caster design was appropriate for the presentation environment - a flat indoor floor - and required no motor control integration.
 
 ---
 
