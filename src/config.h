@@ -1,12 +1,12 @@
 // ============================================================
-// config.h — A-SIA Humanoid Robotic Guide
+// config.h - A-SIA Humanoid Robotic Guide
 // Central configuration: pins, servo limits, audio track IDs
 // ============================================================
 
 #pragma once
 
 // ------------------------------------------------------------
-// Servo output pins (D2–D8, confirmed from archived code)
+// Servo output pins (D2-D8, confirmed from archived code)
 // ------------------------------------------------------------
 #define PIN_SERVO_HEAD_YAW        2
 #define PIN_SERVO_HEAD_PITCH      3
@@ -17,7 +17,7 @@
 #define PIN_SERVO_FACE_RIGHT      8
 
 // ------------------------------------------------------------
-// Analog control inputs (A0–A6, wired potentiometers)
+// Analog control inputs (A0-A6, wired potentiometers)
 // Each potentiometer maps directly to its servo channel
 // ------------------------------------------------------------
 #define AIN_HEAD_YAW              A0
@@ -45,7 +45,7 @@
 #define NEUTRAL_FACE_RIGHT        90
 
 // ------------------------------------------------------------
-// DFPlayer Mini — SoftwareSerial pins
+// DFPlayer Mini - SoftwareSerial pins
 // ------------------------------------------------------------
 #define PIN_DFPLAYER_RX           10
 #define PIN_DFPLAYER_TX           11
@@ -56,9 +56,9 @@
 
 // Audio track IDs (folder 1 on microSD)
 // Track assignment matches K1/K2/K3 buttons in RemoteXY
-#define TRACK_GREETING            1     // K1 — greeting phrase
-#define TRACK_GUIDE_PHRASE        2     // K2 — guide narration
-#define TRACK_DEMO                3     // K3 — demo/presentation
+#define TRACK_GREETING            1     // K1 - greeting phrase
+#define TRACK_GUIDE_PHRASE        2     // K2 - guide narration
+#define TRACK_DEMO                3     // K3 - demo/presentation
 
 // ------------------------------------------------------------
 // RTC DS1302 pins (confirmed from archived code)
@@ -75,6 +75,6 @@
 #define LCD_ROWS                  2
 
 // ------------------------------------------------------------
-// DHT sensor (pin 28 in final code — see restoration-notes.md)
+// DHT sensor (pin 28 in final code - see restoration-notes.md)
 // ------------------------------------------------------------
 #define PIN_DHT                   28
