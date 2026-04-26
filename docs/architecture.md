@@ -1,8 +1,8 @@
-# System Architecture — A-SIA Humanoid Robotic Guide
+# System Architecture - A-SIA Humanoid Robotic Guide
 
 ## Overview
 
-A-SIA is built around a single Arduino Mega 2560 as the central controller. All subsystems — servo actuation, audio playback, and auxiliary sensing — connect directly to this board. There is no secondary microcontroller, no onboard compute module, and no embedded inference engine.
+A-SIA is built around a single Arduino Mega 2560 as the central controller. All subsystems - servo actuation, audio playback, and auxiliary sensing - connect directly to this board. There is no secondary microcontroller, no onboard compute module, and no embedded inference engine.
 
 ---
 
@@ -20,7 +20,7 @@ A-SIA is built around a single Arduino Mega 2560 as the central controller. All 
 
 ### 1. Facial and Head Motion
 
-Seven SG90 micro-servos drive all expressive and positional degrees of freedom in the head. Each servo is controlled by a dedicated analog input channel connected to a physical potentiometer. The mapping is direct and continuous — no buffering, no state machine.
+Seven SG90 micro-servos drive all expressive and positional degrees of freedom in the head. Each servo is controlled by a dedicated analog input channel connected to a physical potentiometer. The mapping is direct and continuous - no buffering, no state machine.
 
 ```
 A0–A6  →  map(0–1023, 0–180)  →  D2–D8 (SM1–SM7)
@@ -62,7 +62,7 @@ A custom oval foam enclosure on passive casters served as the rolling platform d
 
 ## External AI Guide Layer
 
-The guide persona was not embedded in the firmware. A conversational AI interface was operated externally and scripted separately to deliver guide narration. The embedded system was responsible solely for motion and audio — the interaction layer above it was decoupled.
+The guide persona was not embedded in the firmware. A conversational AI interface was operated externally and scripted separately to deliver guide narration. The embedded system was responsible solely for motion and audio - the interaction layer above it was decoupled.
 
 ```
 External conversational layer
@@ -77,9 +77,9 @@ External conversational layer
 
 ```
 ┌──────────────────────────────────────────────────────┐
-│                  Arduino Mega 2560                    │
-│                                                       │
-│   Analog inputs          Digital outputs              │
+│                  Arduino Mega 2560                   │
+│                                                      │
+│   Analog inputs          Digital outputs             │
 │   A0 ──────────────────► D2  (Head Yaw)              │
 │   A1 ──────────────────► D3  (Head Pitch)            │
 │   A2 ──────────────────► D4  (Mouth)                 │
@@ -87,7 +87,7 @@ External conversational layer
 │   A4 ──────────────────► D6  (Eyes V)                │
 │   A5 ──────────────────► D7  (Face Left)             │
 │   A6 ──────────────────► D8  (Face Right)            │
-│                                                       │
+│                                                      │
 │   Serial1 ◄────────────── ESP8266 (RemoteXY)         │
 │   D10/D11 ──────────────► DFPlayer Mini              │
 │   I²C     ──────────────► LCD 16×2                   │
