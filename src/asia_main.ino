@@ -1,6 +1,6 @@
 // ============================================================
-// asia_main.ino — A-SIA Humanoid Robotic Guide
-// Main sketch — initializes subsystems and runs control loop
+// asia_main.ino - A-SIA Humanoid Robotic Guide
+// Main sketch - initializes subsystems and runs control loop
 //
 // Controller : Arduino Mega 2560
 // Servos     : 7× SG90 on D2–D8, driven by analog A0–A6
