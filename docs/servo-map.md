@@ -1,10 +1,10 @@
-# Servo Map — A-SIA Humanoid Robotic Guide
+# Servo Map - A-SIA Humanoid Robotic Guide
 
 ## Overview
 
 Seven SG90 micro-servos drive all facial and head motion. Pin assignments are confirmed from the archived FLProg-generated sketch, where servos are attached in the `setup()` function as `_SM1.attach(2)` through `_SM7.attach(8)`.
 
-Control inputs are seven analog potentiometers wired to A0–A6. Each potentiometer value (0–1023) is mapped continuously to a servo angle (0°–180°).
+Control inputs are seven analog potentiometers wired to A0–A6. Each potentiometer value (0-1023) is mapped continuously to a servo angle (0°-180°).
 
 ---
 
@@ -34,17 +34,17 @@ Full potentiometer range covers full servo travel. No dead zones or scaling were
 
 ## Channel Notes
 
-**Head Yaw (SM1)** — left/right head rotation. Center at 90°.
+**Head Yaw (SM1)** - left/right head rotation. Center at 90°.
 
-**Head Pitch (SM2)** — forward/backward head tilt. Level at 90°.
+**Head Pitch (SM2)** - forward/backward head tilt. Level at 90°.
 
-**Mouth (SM3)** — jaw open/close. Neutral is closed (10°). Full open toward 60–90° depending on mechanism geometry.
+**Mouth (SM3)** - jaw open/close. Neutral is closed (10°). Full open toward 60–90° depending on mechanism geometry.
 
-**Eyes Horizontal (SM4)** — lateral eye movement. Both eyes linked to single channel via mechanical coupling.
+**Eyes Horizontal (SM4)** - lateral eye movement. Both eyes linked to single channel via mechanical coupling.
 
-**Eyes Vertical (SM5)** — vertical eye movement.
+**Eyes Vertical (SM5)** - vertical eye movement.
 
-**Left Facial Axis (SM6) / Right Facial Axis (SM7)** — bilateral facial surface actuators. These drive cheek or brow movement depending on the physical linkage in the head assembly.
+**Left Facial Axis (SM6) / Right Facial Axis (SM7)** - bilateral facial surface actuators. These drive cheek or brow movement depending on the physical linkage in the head assembly.
 
 ---
 
