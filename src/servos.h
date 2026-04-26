@@ -1,5 +1,5 @@
 // ============================================================
-// servos.h — A-SIA Humanoid Robotic Guide
+// servos.h - A-SIA Humanoid Robotic Guide
 // Servo subsystem interface
 // ============================================================
 
