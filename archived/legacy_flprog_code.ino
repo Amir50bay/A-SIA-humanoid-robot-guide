@@ -1,7 +1,7 @@
 // ============================================================
-// legacy_flprog_code.ino — A-SIA Humanoid Robotic Guide
+// legacy_flprog_code.ino - A-SIA Humanoid Robotic Guide
 // Original FLProg-generated Arduino sketch
-// Preserved as-is — auto-generated variable names retained
+// Preserved as-is - auto-generated variable names retained
 //
 // This file is the primary source from which the restored
 // src/ modules were derived. Do not edit.
