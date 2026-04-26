@@ -1,4 +1,4 @@
-# A-SIA — Humanoid Robotic Guide Prototype
+# A-SIA - Humanoid Robotic Guide Prototype
 
 > Servo-driven facial and head motion · Voice playback · Wheeled mobile base · Arduino Mega 2560
 
@@ -60,7 +60,7 @@ Each servo angle is computed as:
 ```cpp
 servo.write(map(analogRead(Ax), 0, 1023, 0, 180));
 ```
-Control was fully wired — potentiometers physically attached to the operator panel.
+Control was fully wired - potentiometers physically attached to the operator panel.
 
 ---
 
@@ -85,7 +85,7 @@ Control was fully wired — potentiometers physically attached to the operator p
                              3 prerecorded tracks
 ```
 
-The AI guide layer was external — a conversational persona was operated separately and used to script the guide interaction. The embedded system handled all motion and audio; no onboard inference or LLM API was present in the firmware.
+The AI guide layer was external - a conversational persona was operated separately and used to script the guide interaction. The embedded system handled all motion and audio; no onboard inference or LLM API was present in the firmware.
 
 ---
 
@@ -99,7 +99,7 @@ The archived FLProg-generated sketch (`archived/legacy_flprog_code.ino`) confirm
 - `dfPlayerMega.start_track(1, x)` calls for tracks 1, 2, and 3
 - RemoteXY structure with K1/K2/K3 buttons and volume slider
 - RTC DS1302 on pins 23, 25, 27
-- DHT sensor (pin 28 in final code; pin 9 in earlier diagram — see restoration notes)
+- DHT sensor (pin 28 in final code; pin 9 in earlier diagram - see restoration notes)
 - LCD I²C at address 0x27
 
 ---
