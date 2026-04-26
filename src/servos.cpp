@@ -1,11 +1,11 @@
 // ============================================================
-// servos.cpp — A-SIA Humanoid Robotic Guide
+// servos.cpp - A-SIA Humanoid Robotic Guide
 // Servo subsystem implementation
 // ============================================================
 
 #include "servos.h"
 
-// Private servo objects — one per channel
+// Private servo objects - one per channel
 static Servo _headYaw;
 static Servo _headPitch;
 static Servo _mouth;
@@ -43,7 +43,7 @@ void moveToNeutralPose() {
 }
 
 // ------------------------------------------------------------
-// Live wired control — reads A0–A6, writes to servos
+// Live wired control - reads A0-A6, writes to servos
 // Confirmed behavior from archived FLProg sketch
 // ------------------------------------------------------------
 void updateServosFromAnalog() {
@@ -57,7 +57,7 @@ void updateServosFromAnalog() {
 }
 
 // ------------------------------------------------------------
-// Named setters — for scripted sequences or future automation
+// Named setters - for scripted sequences or future automation
 // ------------------------------------------------------------
 void setHeadYaw(int angle)         { _headYaw.write(constrain(angle, SERVO_MIN_ANGLE, SERVO_MAX_ANGLE)); }
 void setHeadPitch(int angle)       { _headPitch.write(constrain(angle, SERVO_MIN_ANGLE, SERVO_MAX_ANGLE)); }
